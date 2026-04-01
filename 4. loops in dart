@@ -1,0 +1,34 @@
+void main() {
+  //loops in dart
+
+  //we have four loops in dart
+  //for loop
+  //for in loop
+  //while loop
+  //do while loop
+
+  //1. for loop
+  for (int i = 5; i >= 1; i--) {
+    print(i);
+  }
+  
+  //for-in loop
+  var names = ["john", "tina", "steve"];
+  
+  for(var name in names){
+    print(name);
+  }
+  
+  //while loop
+  int i = 5;
+  while(i >= 1){
+    print(i);
+    i--;
+  }
+  
+  //do-while loop
+  do{
+    print(i);
+    i--;
+  }while(i>=1);
+}
