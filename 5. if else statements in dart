@@ -1,0 +1,14 @@
+void main() {
+  //if else if
+  
+  var num = 45;
+  if(num == 5){
+    print("your num is 5");
+  }
+  else if(num == 3){
+    print("your num is 3 not 5");
+  }
+  else {
+    print("your num is not 5 but $num");
+  }
+}
