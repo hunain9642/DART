@@ -1,0 +1,53 @@
+void main() {
+  // lists in dart
+  
+  // A Map in Dart is a collection of key–value pairs. Each value is accessed using a unique key, not an index like in lists.
+  
+  var favs = {"John":"pizza", "Micheal":"ice cream"};
+              //kye:value
+  print(favs);
+  print(favs["John"]);
+  
+  //we can ask it to show values
+  
+  print(favs.values);
+  // output: (pizza, ice cream)
+  
+  //we can ask it to show keys as well
+  
+  print(favs.keys);
+  // output: (John, Micheal)
+  
+  //we can check the lenth of the maps as well like how many key:value pairs are in the map
+  
+  print(favs.length);
+  //output: 2
+  
+  //we can add something
+  
+  favs[/*key*/"Tim"] = /*value*/ "brownies";
+  
+  print(favs);
+  //output: {John: pizza, Micheal: ice cream, Tim: brownies}
+  
+  // we can add many things just like in lists
+  
+  favs.addAll({"Tina":"fish", "Jacob":"protien bars"});
+  
+  print(favs);
+  //output: {John: pizza, Micheal: ice cream, Tim: brownies, Tina: fish, Jacob: protien bars}
+  
+  //time for removal, for removing we just write the key
+  
+  favs.remove("Jacob");
+  
+  print(favs);
+  //output: {John: pizza, Micheal: ice cream, Tim: brownies, Tina: fish}
+  
+  //in maps we can also remove everything using the clear command
+  
+  favs.clear();
+  
+  print(favs);
+  //output: {}
+}
