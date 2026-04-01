@@ -1,0 +1,41 @@
+void main(){
+  //variables
+  //two ways to write variables
+  //1. use var datatype or 
+  //2. use the exact datatype like string, int, double etc. mostly we will be using var
+  
+  // example
+  var name = "alex"; // or
+  //String name = "alex";
+  
+  // as we know we can't really make a variable with the same name normally so we commented out one of them.
+  
+  // example for integer
+  var age = 44;
+  //int age = 44; same as var age = 44;
+  
+  //we can now print it 
+  
+  print("my name is $name and my age is $age");
+  
+  
+  //let's say you don't know what the data type of the variable is or will be. this usually happens when we are taking user input and it can be anything so in this case we use dynamic keyword. what it does is that it assigns the data type when the value is passed
+  
+  //example
+  
+  dynamic lastName = "The Lion";
+  
+  print("my first name is $name and my last name is $lastName. My complete name is ${name + " " + lastName}");
+  
+  // there are two keywords in variables 1. const and 2. final
+  
+  const double gravity = 9.8;
+  final time = DateTime.now();
+  
+  print (time);
+  print (gravity);
+  
+  // okay so look at the above three lines of code. one is usign const keyword and the other one is using final keyword. both are almost same but the key difference is that we use const keyword when we know the value before running the code and this value cannot be changed like i used the value of gravity 9.8 it is a constant and const is constant, it stored constant values and they cannot be changed.
+  
+  //second we used a variabl that uses final keyword, the final keyword is used when we don't know the value before running the code. i used time here for example. i don't know when the user will open the application so i used final. when the user opens the app, assign that time to this variable and like const it cannot be changed either after it is assigned.
+}
