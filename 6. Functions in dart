@@ -1,0 +1,34 @@
+void main() {
+  //Functions
+  
+  myFunc(){
+    print ("Hello world");
+  }
+  
+  // above here is a function but what will happen if we run it? nothing. that is cause functions need to be called. it's like making a baby and just expecting him to read your mind and come to you😂😂. he won't come unless you call him 😂😂. so how to call a function ? just like you call that baby, using its name 😂😂. in this case the name is myFunc()
+  
+  myFunc(); // output: Hello world
+  
+  //now functions can also return something instead of doing something, for example
+  
+  myReturn(){
+    return "hello again world";
+  }
+  
+  //now you may think that if we call it, it'll print hello again world. it won't, in this case when the function is returning somehing you need to print that function.
+  print(myReturn()); // output: hello again world
+  
+  //we can also store that function in a variable and then print that variable.
+  
+  var thing = myReturn();
+  print(thing); //output: hello again world
+  
+  //one more thing we can do is that we can pass parameters and arguments to our functions.
+  
+  arguments(String name){
+    return "Hello $name, how are you?";
+  }
+  
+  var greetings = arguments("Alex the Lion");
+  print(greetings); //output: Hello Alex the Lion, how are you?
+}
